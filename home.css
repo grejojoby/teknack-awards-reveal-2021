@@ -35,7 +35,7 @@ body {
   
   div {
     display: flex;
-    height: 100vh;
+    height: 95vh;
     align-items: center;
     justify-content: center;
     flex-flow: column;
@@ -160,4 +160,74 @@ body {
   }
   div a:hover span.text:after {
     background: #ece8e1;
+  }
+
+  .organize {
+    color: #fafafa;
+    font-size: 2.5vh;
+    line-height: 3.5vh;
+  }
+
+
+  .slide-container .prev,
+  .slide-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -22px;
+    padding: 14px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+    height: 30px;
+  }
+  
+  .slide-container .prev:hover,
+  .slide-container .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+  
+  .slide-container .prev {
+    left: 2px;
+  }
+  
+  .slide-container .next {
+    right: 2px;
+  }
+  
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin: auto;
+    position: relative;
+    top: 10%;
+  }
+  
+  .slide-container .slide {
+    display: none;
+    width: 100%;
+  }
+  
+  .slide-container .slide.fade {
+    animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  }
+  
+  .slide-container .slide img {
+    width: 100%;
   }

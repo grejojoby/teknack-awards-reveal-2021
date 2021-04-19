@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games | Teknack Awards 2021</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <img src="teknacklogo-01.png" alt="" class="teknack-logo" style="position: absolute;top: 5%;left: 5%;width: 200px;">
+    <div>
+        <!-- <h1 style="transform: scaleY(1.1);margin-bottom: 20px;">Teknack Game Awards 2021</h1> -->
+        <!-- <h1 style="transform: scale(0.6);margin-bottom: 20px;">Games of 2021</h1> -->
+        <!-- <figure class="slide"><img src="games/battle.jpg" alt="Sky" /></figure>
+            <figure class="slide"><img src="games/bot.jpg" alt="Sky" /></figure>
+            <figure class="slide"><img src="games/circlezoid.png" alt="River" /></figure>
+            <figure class="slide"><img src="games/enchanted.jpg" alt="Rain" /></figure>
+            <figure class="slide"><img src="games/foodunk.jpg" alt="Rain" /></figure>
+            <figure class="slide"><img src="games/fruit.jpg" alt="Rain" /></figure>
+            <figure class="slide"><img src="games/garner.jpg" alt="Rain" /></figure>
+            <figure class="slide"><img src="games/ghoulhunter21.jpg" alt="Rain" /></figure>
+            <figure class="slide"><img src="games/hippi.jpg" alt="Rain" /></figure>
+            <figure class="slide"><img src="games/logic.jpg" alt="Rain" /></figure>
+            <figure class="slide"><img src="games/shooty.jpg" alt="Rain" /></figure>
+            <figure class="slide"><img src="games/tlc.jpg" alt="Rain" /></figure>
+            <figure class="slide"><img src="games/trinity.jpg" alt="Rain" /></figure>
+            <figure class="slide"><img src="games/ws.jpg" alt="Rain" /></figure>
+            <figure class="slide"><img src="games/zenscape.jpg" alt="Rain" /></figure> -->
+
+        <div class="slide-container">
+            <div class="slide fade">
+                <img src='games/battle.jpg'>
+            </div>
+            <div class="slide fade">
+                <img src='games/bot.jpg'>
+            </div>
+            <div class="slide fade">
+                <img src='games/circlezoid.png'>
+            </div>
+            <div class="slide fade">
+                <img src='games/enchanted.jpg'>
+            </div>
+            <div class="slide fade">
+                <img src='games/foodunk.jpg'>
+            </div>
+            <div class="slide fade">
+                <img src='games/fruit.jpg'>
+            </div>
+            <div class="slide fade">
+                <img src='games/garner.jpg'>
+            </div>
+            <div class="slide fade">
+                <img src='games/ghoulhunter21.jpg'>
+            </div>
+            <div class="slide fade">
+                <img src='games/hippi.jpg'>
+            </div>
+            <div class="slide fade">
+                <img src='games/logic.jpg'>
+            </div>
+            <div class="slide fade">
+                <img src='games/shooty.jpg'>
+            </div>
+            <div class="slide fade">
+                <img src='games/tlc.jpg'>
+            </div>
+            <div class="slide fade">
+                <img src='games/trinity.jpg'>
+            </div>
+            <div class="slide fade">
+                <img src='games/ws.jpg'>
+            </div>
+            <div class="slide fade">
+                <img src='games/zenscape.jpg'>
+            </div>
+            
+
+            <a href="#" class="prev" title="Previous">&#10094</a>
+            <a href="#" class="next" title="Next">&#10095</a>
+        </div>
+
+    </div>
+    <a href="index.html"
+        style="position: absolute;bottom: 50px;right: 50px;text-decoration: none;color: #fafafa;">Home</a>
+
+    <script>
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".slide")
+
+        const init = (n) => {
+            slides.forEach((slide, index) => {
+                slide.style.display = "none"
+                
+            })
+            slides[n].style.display = "block"
+        }
+        document.addEventListener("DOMContentLoaded", init(currentSlide))
+        const next = () => {
+            currentSlide >= slides.length - 1 ? currentSlide = 0 : currentSlide++
+            init(currentSlide)
+        }
+
+        const prev = () => {
+            currentSlide <= 0 ? currentSlide = slides.length - 1 : currentSlide--
+            init(currentSlide)
+        }
+
+        document.querySelector(".next").addEventListener('click', next)
+
+        document.querySelector(".prev").addEventListener('click', prev)
+
+
+        // setInterval(() => {
+        //     next()
+        // }, 5000);
+
+        
+    </script>
+</body>
+
+</html>
