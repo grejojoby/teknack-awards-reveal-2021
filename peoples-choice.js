@@ -96,7 +96,11 @@ class TextScramble {
           document.getElementById("logo").style.visibility = 'visible';
           document.getElementById('logo').style.animation="pulse 1s";
           document.getElementById("dev").style.visibility = 'visible';
-          document.getElementById('dev').style.animation="ease-in 2s";
+          document.getElementById('dev').style.animation="ease-in 3s";
+          document.getElementById("stats").style.visibility = 'visible';
+          document.getElementById('stats').style.animation="ease-in 3s";
+          document.getElementById("award-title").style.visibility = 'visible';
+          document.getElementById('award-title').style.animation="ease-in 3s";
         }
  
     })
@@ -125,5 +129,7 @@ class TextScramble {
 
   document.getElementById("logo").style.visibility = 'hidden';
   document.getElementById("dev").style.visibility = 'hidden';
+  document.getElementById("stats").style.visibility = 'hidden';
+  document.getElementById("award-title").style.visibility = 'hidden';
   
   next()
